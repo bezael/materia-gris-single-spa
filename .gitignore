@@ -1,0 +1,7 @@
+.vscode
+.angulardoc.json
+mf-store-storage/node_modules/*
+mf-store-storage/dist/*
+mf-store-cookie/node_modules/*
+mf-store-navbar/node_modules/*
+mf-store-related/node_modules/*
