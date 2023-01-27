@@ -1,0 +1,71 @@
+/* SASS syntax is enabled by precss plugin */
+
+$color: steelblue;
+$white: #fff;
+
+#cookie-consent {
+  border: 1px solid $color;
+  border-radius: 0.5rem;
+  bottom: 1rem;
+  left: .5rem;
+  right: .5rem;
+  padding: 1rem;
+  position: fixed;
+  transform: none;
+  transition: 350ms ease-in-out;
+  background-color: $white;
+
+  &.hide {
+    transform: translateY(calc(100% + 1rem));
+  }
+
+  .m-0 {
+    margin: 0;
+  }
+
+  .mb-1 {
+    margin-bottom: 1rem;
+  }
+
+  .bg-blue {
+    background: $color;
+  }
+
+  .py-1 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .px-2 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .rounded-1 {
+    border-radius: 0.5rem;
+  }
+
+  .border-none {
+    border: none;
+  }
+
+  .text-white {
+    color: $white;
+  }
+
+  .text-base {
+    font-size: 1rem;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .justify-end {
+    justify-content: flex-end;
+  }
+
+  .align-center {
+    align-items: center;
+  }
+}
