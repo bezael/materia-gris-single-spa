@@ -21,7 +21,13 @@
     <header>
       <application name="@single-spa/navbar"></application>
     </header>
-    <route default>
+    <redirect from="/" to="/products"></redirect>
+
+    <route path="products">
+      <application name="@single-spa/products"></application>
+      <route path=":id">
+        <application name="@single-spa/related"></application>
+      </route>
     </route>
   </main>
   <application name="@single-spa/cookies"></application> 
