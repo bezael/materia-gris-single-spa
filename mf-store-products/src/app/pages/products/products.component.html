@@ -1,3 +1,11 @@
-<p>
-  products works!
-</p>
+<ng-container *ngIf="products$ | async as products; else loading">
+  <div class="row">
+    <div class="col-sm-3 d-flex align-items-strech" *ngFor="let product of products">
+      <app-card [product]="product"></app-card>
+    </div>
+  </div>
+</ng-container>
+
+<ng-template #loading>
+  Loading......
+</ng-template>
